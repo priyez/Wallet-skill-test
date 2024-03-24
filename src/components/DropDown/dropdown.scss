@@ -1,0 +1,48 @@
+$col-black: #000;
+$col-white: #fff;
+$col-gray: #adb7c3;
+$col-text: #3c3c3c;
+
+.dropdown {
+    height: auto;
+    position: fixed;
+    background: $col-white;
+    width: 180px;
+    border-radius: 10px;
+    right: 15px;
+    z-index: 5;
+    top: 5rem;
+    opacity: 1;
+    transition: ease, opacity 0.5s ease; 
+    ul {
+        list-style: none;
+        text-align: start;
+        display: block;
+        padding: 0 10px;
+
+        li {
+            display: flex;
+            padding: 10px 0;
+            font-size: 16px;
+            border-bottom: 0.7px solid $col-gray;
+
+            &:nth-child(4) {
+                border-bottom: none;
+            }
+
+            a {
+                display: flex;
+                width: 100%;
+                justify-content: space-between;
+                text-decoration: none;
+                color: $col-black;
+
+                p {
+                    margin: 0;
+                    color: $col-text;
+                }
+            }
+        }
+    }
+
+}

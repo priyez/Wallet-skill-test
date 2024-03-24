@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
 
-function App() {
+import React,{ useState } from 'react';
+import Main from './Main'
+
+const App = ()=>{
+
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className='documentation' > 
+      <div>
+        Unavailable On Desktop.
+        <br/>
+        Please use ur Mobile
+      </div>
+      </div>
+      <div className='main'>
+      <Main/>
+      </div>
+
     </div>
   );
 }

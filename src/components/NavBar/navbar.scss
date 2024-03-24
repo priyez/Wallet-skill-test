@@ -1,0 +1,60 @@
+$col-black: #000;
+$col-white: #fff;
+$col-gray: #adb7c3;
+$col-bg: #424242d4;
+$col-black: #000;
+
+.navbar {
+    width: 98%;
+    padding: 2.5px 5px;
+    display: flex;
+    height: 8vh;
+    top: 0;
+    position: fixed;
+    justify-content: space-between;
+    background: $col-white ;
+    z-index: 4;
+
+
+    a {
+        margin: 1rem 1rem;
+
+        svg {
+            fill: $col-gray;
+            transition: fill 0.3s ease; 
+        }
+        &:hover {
+            svg {
+              fill: $col-black;
+            }
+          }
+    }
+
+    h1 {
+        margin: 1rem 0;
+        font-size: 22px;
+
+    }
+
+    button {
+        margin: 0 1rem;
+        border: none;
+        background: transparent;
+
+        &:hover {
+            svg {
+              fill: $col-black;
+            }
+          }
+    }
+
+}
+
+.bgDropdown {
+    background: $col-bg;
+    
+    z-index: 3;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+}

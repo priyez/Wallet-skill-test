@@ -1,0 +1,47 @@
+$col-black: #000;
+$col-white: #fff;
+$col-blue: #54bee9;
+$col-red: #ed215d;
+
+.buy-and-sell{
+    width: 90%;
+    padding: 0 5px;
+    display: flex;
+    height: 20.5vh;
+    margin: 1rem 0.8rem 5rem 0.8rem;
+    .container{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        .comp{
+            background: $col-white;
+            border-radius: 15px;
+    text-align: center;
+    padding: 18px 45px;
+    display: flex;
+    flex-direction: column;
+.cover{
+    justify-content: center;
+    width: 55px;
+    height: 55px;
+    border-radius: 100%;
+    align-items: center;
+    display: flex;
+    text-align: center;
+    margin: 0;
+        background: $col-blue; 
+  
+}
+.cover-r{
+    background: $col-red; 
+}
+p{
+    display: inline-flex;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+        }
+    }
+
+}

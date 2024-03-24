@@ -1,0 +1,95 @@
+$col-black: #000;
+$col-white: #fff;
+$col-gray: #adb7c3;
+$col-red: #ed215d;
+
+.box-one {
+    width: 90%;
+    padding: 0 5px;
+    display: flex;
+    height: 32.5vh;
+    flex-direction: column;
+    background: $col-white;
+    border-radius: 15px;
+    margin: 5rem 0.8rem 1rem 0.8rem;
+
+    &-header {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        height: 8vh;
+        padding: 0.5rem 1rem;
+
+        &-BTCicon {
+            display: flex;
+
+            .btc-icon {
+                height: 50px;
+                width: 50px;
+                border-radius: 100%;
+                background: $col-white;
+                display: flex;
+                margin-right: 10px;
+                margin-top: 5px;
+            }
+            p{
+                font-weight: 800;
+            }
+
+        }
+
+        &-BTCtext {}
+    }
+
+    &-fig {
+        text-align: start;
+        padding: 0px 18px;
+        width: 90%;
+        margin: 0;
+
+        h1 {
+            margin: 0;
+        }
+
+        &-s {
+            justify-content: space-between;
+            display: flex;
+            width: 100%;
+            margin: 0;
+
+            p {
+                font-size: 18px;
+            }
+
+            .red {
+                background: $col-red;
+                padding: 2.5px;
+                color: $col-white;
+                text-align: center;
+                width: 85px;
+                font-size: 18px;
+                padding: 5px 0px;
+                border-radius: 50px;
+            }
+
+        }
+    }
+
+    &-dropdown-icon {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        font-weight: 800;
+        position: relative;
+        bottom: 15px;
+
+        svg {
+            fill: $col-gray;
+        }
+        &:hover {
+            svg {
+              fill: $col-black;
+            }
+          }
+    }
+}

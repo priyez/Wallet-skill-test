@@ -1,0 +1,47 @@
+$col-black: #000;
+$col-white:#fff;
+$col-gray: #adb7c3;
+
+
+
+.e-info{
+  width: 98%;
+  padding: 0 0px;
+  margin: 0.5rem 0.25rem;
+   &-sh{
+    display: flex;
+    justify-content: space-evenly;
+    width: 95%;
+    height: 5vh;
+    padding: 0rem 0.5rem;
+
+    span{
+        line-height: 2;
+        border-radius: 50px;
+        width: 100px;
+        height: 5vh;
+        color: $col-black;
+        align-items: center;
+        text-align: center;
+        transition: background-color 0.3s ease;
+
+        &.active {
+          background-color:$col-gray;
+          color:$col-white
+        }
+    }
+    
+   }
+
+   &-content {
+    transition: opacity 0.3s ease;
+    opacity: 1;
+  }
+
+  &.hide {
+    .e-info-content {
+      opacity: 0;
+    }
+  }
+
+}
